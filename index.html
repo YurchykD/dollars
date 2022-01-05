@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body class="page">
+    <div class="block">
+        <div class="container">
+            <form class="container__form" id="form" action="/" method="POST">
+                <h1 class="container__form-title">
+                    <em>&#36;</em> Форма для подсчета долларов <em>&#36;</em>
+                </h1>
+                <fieldset class="container__form-set">
+                    <legend class="legend">Введите количество</legend>
+                    <label for="grivna">Гривны</label>
+                    <input type="text" name="grivna" class="input grivna" id="grivna">
+                    <br>
+                    <label for="dollar">Доллары</label>
+                    <input type="text" name="dollar" class="input dollar" id="dollar">
+                    <br>
+                    <label for="euro">Евро</label>
+                    <input type="text" name="euro" class="input euro" id="euro">
+                    <br>
+                    <label for="pound">Фунты</label>
+                    <input type="text" name="pound" class="input pound" id="pound">
+                </fieldset>
+                <p><input class="container__form-button" type="submit" value="Рассчитать"></p>
+            </form>
+        </div>
+        <div class="section">
+            <h2 class="section__title">
+                <em>&#36;</em> Ваши доллары:
+            </h2>
+            <div class="section__result">
+                <p class="section__result-count">
+                    0
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

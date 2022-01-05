@@ -1,0 +1,81 @@
+@import "./reset.scss";
+
+.page {
+    background-image: url("./src/images/raining-money-40.gif");
+    background-size: cover;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    background-color: white;
+    max-width: 600px;
+    border: 5px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__form {
+        &-title {
+            margin: 40px 0 20px;
+        }
+
+        &-set {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+        &-button {
+            cursor: pointer;
+            width: 100%;
+            height: 50px;
+            font-size: 30px;
+            background-color: rgb(103, 207, 77);
+            color: white;
+
+            &:hover {
+                background-color: cadetblue;
+            }
+        }
+    }
+}
+
+.section {
+    &__title {
+        margin: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    &__result {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px auto 40px;
+        justify-content: center;
+        border: 5px dashed rgb(78, 209, 45);
+        width: 300px;
+        height: 200px;
+
+        &-count {
+            font-size: 50px;
+        }
+    }
+}
+
+.legend {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input {
+    margin-top: 5px;
+    max-width: 300px;
+}
